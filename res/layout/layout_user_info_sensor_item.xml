@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_biomx_user_info_sensors"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_gravity="center"
+    android:background="#dce3e4"
+    android:padding="8dp" >
+
+    <com.biomx.android.client.widget.XTextView
+        android:id="@+id/text_view_list_sensor_name"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/text_view_list_sensor_position"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@+id/text_view_list_sensor_name"
+        android:background="@drawable/drawable_border_spinner_3f5154"
+        android:entries="@array/sensor_position_list"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <com.biomx.android.client.widget.XEditText
+        android:id="@+id/edit_text_list_sensor_custom_position"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/text_view_list_sensor_name"
+        android:background="@drawable/drawable_border_edittext_3f5154"
+        android:inputType="text"
+        android:layout_centerInParent="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <com.biomx.android.client.widget.XCheckBox
+        android:id="@+id/text_view_list_sensor_is_custom_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        android:button="@drawable/drawable_border_checkbox_3f5154"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textColor="#000000" />
+
+</RelativeLayout>

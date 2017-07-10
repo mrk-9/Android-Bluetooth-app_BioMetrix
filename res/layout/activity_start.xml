@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/drawable_border_grey"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    tools:context=".StartActivity" >
+
+    <RelativeLayout
+        android:id="@+id/menu_container"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#01bad5"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <ImageView
+            android:id="@+id/image_view_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/logo_content_description"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/text_view_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_view_logo"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/label_header_text"
+            android:textColor="#FFFFFF"
+            android:textSize="52sp" />
+
+        <TextView
+            android:id="@+id/text_view_header_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_header"
+            android:layout_centerInParent="true"
+            android:text="@string/label_header_description_text"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/button_capture_session"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_header_description"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/drawable_menu_button"
+            android:drawableLeft="@drawable/capturesession"
+            android:drawablePadding="15dp"
+            android:paddingRight="50dp"
+            android:text="@string/button_caption_capture_session"
+            android:textColor="#000000"
+            android:textSize="21sp" >
+        </Button>
+
+        <Button
+            android:id="@+id/button_connect_device"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/button_capture_session"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/button_capture_session"
+            android:layout_below="@+id/button_capture_session"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/drawable_menu_button"
+            android:drawableLeft="@drawable/drawable_menu_connect_device"
+            android:drawablePadding="15dp"
+            android:gravity="center_vertical|left"
+            android:text="@string/button_caption_connect_device"
+            android:textColor="#000000"
+            android:textSize="19sp" >
+        </Button>
+
+        <Button
+            android:id="@+id/button_set_user_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/button_capture_session"
+            android:layout_alignRight="@+id/button_capture_session"
+            android:layout_below="@+id/button_connect_device"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/drawable_menu_button"
+            android:drawableLeft="@drawable/drawable_menu_user_info"
+            android:drawablePadding="15dp"
+            android:text="@string/button_caption_set_user_info"
+            android:textColor="#000000"
+            android:textSize="19sp" >
+        </Button>
+
+        <Button
+            android:id="@+id/button_set_capture_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/button_capture_session"
+            android:layout_alignRight="@+id/button_capture_session"
+            android:layout_below="@+id/button_set_user_info"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/drawable_menu_button"
+            android:drawableLeft="@drawable/drawable_menu_capture_settings"
+            android:drawablePadding="15dp"
+            android:text="@string/button_caption_set_capture_settings"
+            android:textColor="#000000"
+            android:textSize="19sp" >
+        </Button>
+
+        <Button
+            android:id="@+id/button_capture_session_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/button_capture_session"
+            android:layout_alignRight="@+id/button_capture_session"
+            android:layout_below="@+id/button_set_capture_settings"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/drawable_menu_button"
+            android:drawableLeft="@drawable/drawable_menu_capture_session"
+            android:drawablePadding="15dp"
+            android:gravity="center_vertical|left"
+            android:text="@string/button_caption_capture_session_1"
+            android:textColor="#000000"
+            android:textSize="19sp" >
+        </Button>
+
+        <Button
+            android:id="@+id/button_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/button_capture_session"
+            android:layout_alignRight="@+id/button_capture_session"
+            android:layout_below="@+id/button_capture_session_1"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/drawable_menu_button"
+            android:drawableLeft="@drawable/settingsgrey"
+            android:drawablePadding="15dp"
+            android:gravity="center_vertical|left"
+            android:text="@string/button_caption_settings"
+            android:textColor="#000000"
+            android:textSize="21sp" >
+        </Button>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/content_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/menu_container"
+        android:background="#FFFFFF"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp" >
+    </RelativeLayout>
+
+</RelativeLayout>

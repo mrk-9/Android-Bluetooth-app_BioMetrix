@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_biomx_sensors"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:background="#dce3e4"
+    android:padding="5dp" >
+
+    <com.biomx.android.client.widget.XTextView
+        android:id="@+id/text_view_list_sensor_name"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <com.biomx.android.client.widget.XButton
+        android:id="@+id/button_list_sensor_status"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text=""
+        android:textColor="@drawable/drawable_button_yellow_text_color"
+        android:textSize="18sp" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar_list_sensor_connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+    <com.biomx.android.client.widget.XButton
+        android:id="@+id/button_list_sensor_calibrate"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <com.biomx.android.client.widget.XButton
+        android:id="@+id/button_list_sensor_battery"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <com.biomx.android.client.widget.XButton
+        android:id="@+id/button_list_sensor_disconnect"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+</LinearLayout>

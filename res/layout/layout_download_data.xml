@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/capture_session_container"
+    android:layout_width="550dp"
+    android:layout_height="match_parent"
+    android:background="#dce3e4"
+    android:padding="10dp" >
+
+    <com.biomx.android.client.widget.XTextView
+        android:id="@+id/text_view_content_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:padding="20dp"
+        android:text="@string/header_download_data_dialog"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+	
+    <com.biomx.android.client.widget.XCheckBox
+        android:id="@+id/text_view_list_file_chooser_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_content_header"
+        android:gravity="center"
+        android:text="@string/download_data_list_caption_select_all"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+    
+    <ListView
+        android:id="@+id/list_view_biomx_data"
+        android:layout_width="wrap_content"
+        android:layout_height="280dp"
+        android:layout_alignLeft="@+id/text_view_content_header"
+        android:layout_below="@+id/text_view_list_file_chooser_all"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:divider="@null"
+        android:dividerHeight="3dp" >
+    </ListView>
+
+    <com.biomx.android.client.widget.XButton
+        android:id="@+id/button_download"
+        android:layout_width="130dp"
+        android:layout_marginLeft="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list_view_biomx_data"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/drawable_button_transparent"
+        android:gravity="center"
+        android:text="@string/button_caption_download"
+        android:textColor="@drawable/drawable_button_blue_text_color"
+        android:textSize="20sp" >
+    </com.biomx.android.client.widget.XButton>
+
+    <com.biomx.android.client.widget.XButton
+        android:id="@+id/button_delete"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button_download"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/button_download"
+        android:background="@drawable/drawable_button_transparent"
+        android:gravity="center"
+        android:text="@string/button_caption_delete"
+        android:textColor="@drawable/drawable_button_blue_text_color"
+        android:textSize="20sp" />
+
+    <com.biomx.android.client.widget.XButton
+        android:id="@+id/button_close"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button_download"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/button_delete"
+        android:background="@drawable/drawable_button_transparent"
+        android:gravity="center"
+        android:text="@string/button_caption_close"
+        android:textColor="@drawable/drawable_button_blue_text_color"
+        android:textSize="20sp" />
+
+</RelativeLayout>

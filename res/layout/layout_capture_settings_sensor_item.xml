@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_biomx_capture_settings_sensors"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:background="#dce3e4"
+    android:padding="5dp" >
+
+    <com.biomx.android.client.widget.XTextView
+        android:id="@+id/text_view_list_sensor_name"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <SeekBar
+        android:id="@+id/seek_bar_list_sensitivity"
+        android:layout_width="350dp"
+        android:layout_height="20dp"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@+id/text_view_list_sensor_name"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:progressDrawable="@null"
+        android:textColor="#9fb3b6"
+        android:textSize="16sp"
+        android:thumb="@null" />
+
+    <Spinner
+        android:id="@+id/spinner_list_samplerate"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/text_view_list_sensor_name"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/seek_bar_list_sensitivity"
+        android:background="@drawable/drawable_border_spinner_3f5154"
+        android:entries="@array/sensor_sample_rate_list"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+</RelativeLayout>

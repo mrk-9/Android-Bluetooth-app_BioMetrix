@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/capture_session_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <com.biomx.android.client.widget.XTextView
+        android:id="@+id/text_view_content_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#204e55"
+        android:drawableLeft="@drawable/capturesession"
+        android:drawablePadding="15dp"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="@string/header_description_capture_session"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp" />
+
+    <com.biomx.android.client.widget.XTextView
+        android:id="@+id/text_view_capture_session_sub_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_content_header"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:paddingTop="15dp"
+        android:text="@string/header_capture_session_start_capture_session"
+        android:textColor="#204e55"
+        android:textSize="30sp" />
+
+    <com.biomx.android.client.widget.XButton
+        android:id="@+id/button_begin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/text_view_capture_session_sub_header"
+        android:layout_marginLeft="70dp"
+        android:layout_toRightOf="@+id/text_view_capture_session_sub_header"
+        android:background="@drawable/drawable_button_yellow"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp"
+        android:text="@string/button_caption_begin"
+        android:textAllCaps="true"
+        android:textColor="@drawable/drawable_button_yellow_text_color"
+        android:textSize="45sp" >
+    </com.biomx.android.client.widget.XButton>
+
+    <com.biomx.android.client.widget.XTextView
+        android:id="@+id/text_view_capture_session_desc_sub_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_view_capture_session_sub_header"
+        android:layout_below="@+id/text_view_capture_session_sub_header"
+        android:layout_marginTop="10dp"
+        android:text="@string/header_capture_session_the_biomx_platform"
+        android:textAlignment="center"
+        android:textColor="#204e55"
+        android:textSize="22sp" />
+
+    <View
+        android:id="@+id/header_underline"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/text_view_capture_session_sub_header"
+        android:layout_alignRight="@+id/button_begin"
+        android:layout_below="@+id/text_view_capture_session_desc_sub_header"
+        android:background="@android:color/black" />
+
+    <com.biomx.android.client.widget.XTextView
+        android:id="@+id/text_view_capture_session_desc_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_view_capture_session_sub_header"
+        android:layout_alignRight="@+id/button_begin"
+        android:layout_below="@+id/header_underline"
+        android:layout_marginTop="10dp"
+        android:text="@string/header_capture_session_biomx_platform_desc1"
+        android:textAlignment="center"
+        android:textColor="#204e55"
+        android:textSize="16sp" />
+    
+    <com.biomx.android.client.widget.XTextView
+        android:id="@+id/text_view_capture_session_desc_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_view_capture_session_sub_header"
+        android:layout_alignRight="@+id/button_begin"
+        android:layout_below="@+id/text_view_capture_session_desc_1"
+        android:layout_marginTop="10dp"
+        android:text="@string/header_capture_session_biomx_platform_desc2"
+        android:textAlignment="center"
+        android:textColor="#204e55"
+        android:textSize="16sp" />
+
+</RelativeLayout>

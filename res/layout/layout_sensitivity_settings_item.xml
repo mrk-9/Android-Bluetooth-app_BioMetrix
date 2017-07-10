@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_biomx_capture_settings_sensors"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_gravity="center"
+    android:padding="5dp" >
+
+    <com.biomx.android.client.widget.XTextView
+        android:id="@+id/text_view_list_setting"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <com.biomx.android.client.widget.XTextView
+        android:id="@+id/text_view_list_accg"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/text_view_list_setting"
+        android:layout_toRightOf="@+id/text_view_list_setting"
+        android:gravity="center_horizontal"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <com.biomx.android.client.widget.XTextView
+        android:id="@+id/text_view_list_gyrodps"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/text_view_list_setting"
+        android:layout_toRightOf="@+id/text_view_list_accg"
+        android:gravity="center_horizontal"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+   <com.biomx.android.client.widget.XTextView
+        android:id="@+id/text_view_list_magnmga"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/text_view_list_setting"
+        android:layout_toRightOf="@+id/text_view_list_gyrodps"
+        android:gravity="center_horizontal"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+</RelativeLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BioMX-R</string>
+    <string name="action_settings">Settings</string>
+    <string name="logo_content_description">BioMX-R</string>
+    <string name="label_header_text">BioMX-R</string>
+    <string name="label_header_description_text">Research Tools for the BioMX Sensor</string>
+    <string name="button_caption_capture_session">Capture Session</string>
+    <string name="button_caption_connect_device">Connect Device</string>
+    <string name="button_caption_set_user_info">Set Sensor Positions</string>
+    <string name="button_caption_set_capture_settings">Set Capture Settings</string>
+    <string name="button_caption_capture_session_1">Capture Session</string>
+    <string name="button_caption_settings">Settings</string>
+    <string name="header_description_capture_session">CONNECT BioMX SENSORS</string>
+    <string name="header_description_connect_device">Connect Device</string>
+    <string name="header_description_set_user_info">SET SENSOR POSITIONS</string>
+    <string name="header_description_set_capture_settings">SET CAPTURE SETTINGS</string>
+    <string name="header_description_capture_session_1">User ID, Activity</string>
+    <string name="header_description_settings">Settings</string>
+    <string name="button_caption_begin">Begin</string>
+    <string name="header_list_biomx_sensors">Available BioMX Sensors</string>
+    <string name="button_caption_next">Next</string>
+    <string name="button_caption_add_device">Add Device</string>
+    <string name="connect_device_notification_footer">Keep Sensors at least 1 ft from electro-magnetic sources when connecting sensors to check calibration.</string>
+    <string name="sensors_list_header_name">Name</string>
+    <string name="sensors_list_header_battery">Battery</string>
+    <string name="sensors_list_header_calibrate">Calibrate</string>
+    <string name="sensors_list_header_disconnect">Disconnect</string>
+    <string name="button_caption_connect">Connect</string>
+    <string name="button_caption_back">Back</string>
+    <string name="header_list_user_info">User Information</string>
+    <string name="user_info_sensors_list_header_set_position">Set Position</string>
+    <string name="user_info_sensors_list_header_custom_position">Custom Position</string>
+    <string name="label_text_view_sensor_position">Connected BioMx Sensors</string>
+    <string name="user_info_footer_description">Data file column headings will be named position_variable ie Lknee_AccX
+Custom Positions require a hip sensor to output data oriented in body frame.</string>
+    <string name="label_text_view_sensor_motion_capture_settings">Sensor Motion Capture Settings</string>
+    <string name="capture_settings_sensors_list_header_sensitivity">Sensitivity</string>
+    <string name="capture_settings_sensors_list_header_sample_rate">Sample Rate</string>
+    <string name="capture_settings_view_detailed_sesitivity_settings">View detailed Sensitivity Settings</string>
+    <string name="capture_settings_view_detailed_sesitivity_settings_link"><u>here</u></string>
+    <string name="notification_error_no_sensors_connected">Connect sensor(s) before proceeding</string>
+    <string name="notification_error_invalid_device_position">Define %s sensor position</string>
+    <string name="notification_error_custom_hip_position_required">Custom Positions require a hip sensor to output data oriented in body frame</string>
+    <string name="notification_error_update_device_position">Failed to update device position can\'t proceed</string>
+    <string name="notification_error_failed_to_connect_device">Failed to connect device</string>
+    <string name="notification_error_invalid_sample_rate">Define %s sensor sample rate</string>
+    <string name="notification_error_update_capture_settings">Failed to update capture settings can\'t proceed</string>
+    <string name="header_description_recording_raw_acc_gyro_magn">Recording %s</string>
+    <string name="header_description_sensor_info">%d BioMx Sensors : </string>
+    <string name="seekbar_header_2g">2g</string>
+    <string name="seekbar_header_4g">4g</string>
+    <string name="seekbar_header_8g">8g</string>
+    <string name="seekbar_header_16g">16g</string>
+    <string name="seekbar_header_100g">100g</string>
+    <string name="seekbar_header_400g">400g</string>
+    <string name="notification_calibration_not_implemented">Calibration not implemented!!! </string>
+    <string name="notification_calibration_success">Calibration Success!!! </string>
+    <string name="notification_calibration_failed">Calibration Failed!!! </string>
+
+    <string-array name="sensor_position_list">
+        <item>Rheel</item>
+        <item>Lheel</item>
+        <item>Rknee</item>
+        <item>Lknee</item>
+        <item>hips</item>
+        <item>torso</item>
+    </string-array>
+    <string-array name="sensor_motion_caption_settings_list">
+        <item>Apply Saved Settings</item>
+    </string-array>
+    <string-array name="sensor_sample_rate_list">
+        <item>25</item>
+        <item>50</item>
+        <item>100</item>
+    </string-array>
+
+    <string name="button_caption_lacc">L.Acc</string>
+    <string name="button_caption_eluer">Eluer</string>
+    <string name="button_caption_quat">Quat</string>
+    <string name="button_caption_magn">Magn</string>
+    <string name="button_caption_gyro">Gyro</string>
+    <string name="button_caption_acc">Acc</string>
+    <string name="button_caption_start">Start</string>
+    <string name="button_caption_stop">Stop</string>
+    <string name="button_caption_download_data">Download Data</string>
+    <string name="capture_session_options">New Activities</string>
+    <string name="capture_session_new_capture">New Capture</string>
+    <string name="capture_session_new_positions">New Positions</string>
+    <string name="capture_session_new_session">New Session</string>
+    <string name="capture_session_end_session">End Session</string>
+    <string name="header_sensitivity_settings_reference">Sensitivity Settings Reference</string>
+    <string name="button_caption_done">Done</string>
+    <string name="sensitivity_settings_list_header_setting">Setting</string>
+    <string name="sensitivity_settings_list_header_accg">Acc (g)</string>
+    <string name="sensitivity_settings_list_header_gyrodps">Gyro (dps)</string>
+    <string name="sensitivity_settings_list_header_magnmga">Magn (mga)</string>
+    <string name="header_capture_session_start_capture_session">Start Capture Session: </string>
+    <string name="header_capture_session_the_biomx_platform">The BioMX Platform</string>
+    <string name="header_capture_session_biomx_platform_desc1">BioMX is a miniaturized, wireless, low-power, Attitude Heading Reference System (AHRS);
+incorporating state-of-the-art sensing technology. With storage on board and wireless
+connectivity (Bluetooth), BioMX is a versatile system for data acquisition in live as well as
+untethered settings.</string>
+    <string name="header_capture_session_biomx_platform_desc2">The platform integrates 3-axis accelerometer, gyroscope and magnetometer, with an optional
+High Dynamic Range (HDR) Accelerometer for applications where high-g accelerations and
+high-dps rotations are required for accurate measurements.</string>
+    <string name="label_text_view_configure_data_output">Configure Data Output</string>
+    <string name="label_check_box_configure_data_output_raw_data">Raw Data</string>
+    <string name="label_check_box_configure_data_output_quaternions">Quaternions</string>
+    <string name="settings_list_header_biomx_sensors">Manage BioMX Sensors</string>
+    <string name="header_download_data_dialog">Available Data Files</string>
+    <string name="download_data_list_header_file_name">Name</string>
+    <string name="download_data_list_header_created_time">Created Time</string>
+    <string name="button_caption_download">Download</string>
+    <string name="button_caption_delete">Delete</string>
+    <string name="notification_error_no_files_selected_to_download">Select file(s) before proceeding</string>
+    <string name="notification_your_download_will_begin_shortly">your download will begin shortly</string>
+    <string name="button_caption_close">Close</string>
+    <string name="download_data_list_caption_select_all">Select All</string>
+    <string name="calibration_step_1">1) Move sensor away from all magnet sources</string>
+    <string name="calibration_step_2">2) Rotate device around each axis for several seconds</string>
+    <string name="button_caption_begin_calibration">Begin Calibration</string>
+    <string name="button_caption_calibrate_again">Calibrate Again</string>
+    <string name="button_caption_save_calibration_settings">Save</string>
+    <string name="header_calibration_heading_dialog">To calibrate sensor magnetometer:</string>
+    <string name="notification_calibration_save_success">Calibration data save completed</string>
+</resources>

@@ -1,0 +1,189 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/capture_session_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <com.biomx.android.client.widget.XTextView
+        android:id="@+id/text_view_content_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#204e55"
+        android:drawableLeft="@drawable/capturesessionwhite"
+        android:drawablePadding="15dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/header_description_capture_session"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp" />
+
+    <RelativeLayout
+        android:id="@+id/linear_layout_list_new_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/text_view_content_header"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/text_view_content_header"
+        android:layout_toRightOf="@+id/text_view_content_header"
+        android:background="#204e55"
+        android:orientation="horizontal" >
+
+        <Spinner
+            android:id="@+id/spinner_list_cpature_session_menu"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/drawable_border_spinner_01bad5"
+            android:padding="10dp"
+            android:spinnerMode="dropdown"
+            android:textAlignment="center"
+            android:textColor="#01bad5"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+    <com.biomx.android.client.widget.XTextView
+        android:id="@+id/text_view_content_header_sensor_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_view_content_header"
+        android:layout_below="@+id/text_view_content_header"
+        android:background="#204e55"
+        android:ellipsize="marquee"
+        android:gravity="center_vertical"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingLeft="80dp"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="@string/header_description_sensor_info"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <com.biomx.android.client.widget.XTextView
+        android:id="@+id/text_view_content_header_recording_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_view_content_header"
+        android:layout_below="@+id/text_view_content_header_sensor_info"
+        android:background="#204e55"
+        android:gravity="center_vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="80dp"
+        android:paddingTop="5dp"
+        android:text="@string/header_description_recording_raw_acc_gyro_magn"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout_top_action_button_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_content_header_recording_info"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <com.androidplot.xy.XYPlot
+        android:id="@+id/chart"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_alignLeft="@+id/linear_layout_top_action_button_bar"
+        android:layout_alignRight="@+id/linear_layout_list_new_activity"
+        android:layout_below="@+id/linear_layout_top_action_button_bar"
+        android:layout_marginRight="15dp"
+        androidPlot.graphWidget.marginBottom="10dp"
+        androidPlot.graphWidget.marginLeft="10dp"
+        androidPlot.graphWidget.marginRight="10dp"
+        android:background="@drawable/drawable_border_grey" />
+
+    <RelativeLayout
+        android:id="@+id/linear_layout_left_action_button_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/chart"
+        android:layout_below="@+id/linear_layout_top_action_button_bar"
+        android:layout_toLeftOf="@+id/chart" >
+
+        <com.biomx.android.client.widget.XButton
+            android:id="@+id/button_quat"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:background="@drawable/drawable_button_quat"
+            android:contentDescription="@string/button_caption_quat"
+            android:text="" >
+        </com.biomx.android.client.widget.XButton>
+
+        <com.biomx.android.client.widget.XButton
+            android:id="@+id/button_magn"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_below="@+id/button_quat"
+            android:background="@drawable/drawable_button_magn"
+            android:contentDescription="@string/button_caption_magn"
+            android:text="" >
+        </com.biomx.android.client.widget.XButton>
+
+        <com.biomx.android.client.widget.XButton
+            android:id="@+id/button_gyro"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_below="@+id/button_magn"
+            android:background="@drawable/drawable_button_gyro"
+            android:contentDescription="@string/button_caption_gyro"
+            android:text="" >
+        </com.biomx.android.client.widget.XButton>
+
+        <com.biomx.android.client.widget.XButton
+            android:id="@+id/button_acc"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_below="@+id/button_gyro"
+            android:background="@drawable/drawable_button_acc"
+            android:contentDescription="@string/button_caption_acc"
+            android:text="" >
+        </com.biomx.android.client.widget.XButton>
+    </RelativeLayout>
+
+    <com.biomx.android.client.widget.XButton
+        android:id="@+id/button_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/chart"
+        android:layout_below="@+id/chart"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/drawable_button_blue"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp"
+        android:text="@string/button_caption_start"
+        android:textColor="@drawable/drawable_button_blue_text_color"
+        android:textSize="25sp" >
+    </com.biomx.android.client.widget.XButton>
+
+    <com.biomx.android.client.widget.XButton
+        android:id="@+id/button_download_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/chart"
+        android:layout_alignTop="@+id/button_start"
+        android:layout_below="@+id/chart"
+        android:background="@drawable/drawable_button_blue"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="@string/button_caption_download_data"
+        android:textColor="@drawable/drawable_button_blue_text_color"
+        android:textSize="25sp" >
+    </com.biomx.android.client.widget.XButton>
+
+</RelativeLayout>

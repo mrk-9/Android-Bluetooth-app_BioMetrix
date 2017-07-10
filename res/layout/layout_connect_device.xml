@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/connect_device_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.biomx.android.client.widget.XTextView
+        android:id="@+id/text_view_content_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#204e55"
+        android:drawableLeft="@drawable/connectdevicewhite"
+        android:drawablePadding="15dp"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="@string/header_description_capture_session"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp" />
+
+    <com.biomx.android.client.widget.XTextView
+        android:id="@+id/text_view_biomx_sensor_list_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/list_header_biomx_sensors"
+        android:layout_below="@+id/text_view_content_header"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/header_list_biomx_sensors"
+        android:textAlignment="center"
+        android:textColor="#204e55"
+        android:textSize="22sp" />
+
+    <LinearLayout
+        android:id="@+id/list_header_biomx_sensors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_biomx_sensor_list_header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" >
+
+        <com.biomx.android.client.widget.XTextView
+            android:id="@+id/text_view_list_header_sensor_name"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/sensors_list_header_name"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <com.biomx.android.client.widget.XTextView
+            android:id="@+id/text_view_list_header_sensor_status"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAlignment="center" />
+
+        <com.biomx.android.client.widget.XTextView
+            android:id="@+id/text_view_list_header_sensor_calibarate"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/sensors_list_header_calibrate"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <com.biomx.android.client.widget.XTextView
+            android:id="@+id/text_view_list_header_sensor_battery"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/sensors_list_header_battery"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <com.biomx.android.client.widget.XTextView
+            android:id="@+id/text_view_list_header_sensor_disconnect"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/sensors_list_header_disconnect"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_view_biomx_sensors"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_alignLeft="@+id/list_header_biomx_sensors"
+        android:layout_alignRight="@+id/list_header_biomx_sensors"
+        android:layout_below="@+id/list_header_biomx_sensors"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:divider="@null"
+        android:dividerHeight="3dp" >
+    </ListView>
+
+    <com.biomx.android.client.widget.XButton
+        android:id="@+id/button_refresh_sensors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/list_view_biomx_sensors"
+        android:layout_alignTop="@+id/text_view_biomx_sensor_list_header"
+        android:layout_below="@+id/text_view_content_header"
+        android:background="@drawable/drawable_button_refresh"
+        android:gravity="right" >
+    </com.biomx.android.client.widget.XButton>
+
+    <View
+        android:id="@+id/header_underline"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/text_view_biomx_sensor_list_header"
+        android:layout_alignRight="@+id/button_refresh_sensors"
+        android:layout_below="@+id/text_view_biomx_sensor_list_header"
+        android:background="@android:color/black" />
+
+    <com.biomx.android.client.widget.XButton
+        android:id="@+id/button_add_device"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/list_view_biomx_sensors"
+        android:layout_below="@+id/list_view_biomx_sensors"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/drawable_button_blue"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/button_caption_add_device"
+        android:textColor="@drawable/drawable_button_blue_text_color"
+        android:textSize="20sp" >
+    </com.biomx.android.client.widget.XButton>
+
+    <com.biomx.android.client.widget.XButton
+        android:id="@+id/button_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/drawable_button_blue"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="@string/button_caption_next"
+        android:textColor="@drawable/drawable_button_blue_text_color"
+        android:textSize="20sp" >
+    </com.biomx.android.client.widget.XButton>
+
+</RelativeLayout>
